@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="form_style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">
+            logo
+        </div>
+        <a href="#" class="toggleBtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navLinks">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+        </div>        
+    </nav>
+
+
+    <div class="login">
+        <form action="" class="form" onsubmit="sub1()">
+            <label for="">Sign-Up</label>
+            <input class="inputs" type="text" id="name" placeholder="Enter Your Name">
+            <input class="inputs" type="email" id="email" placeholder="Enter Your Email">
+            <input class="inputs" type="password" id="psw" placeholder="Enter Your Password">
+            <input class="btn" type="submit" value="Submit">
+        </form>
+        <form action="" class="form" onsubmit="sub2()">
+            <label for="">Login</label>
+            <input class="inputs" type="email" id="email1" placeholder="Enter Your Email">
+            <input class="inputs" type="password" id="psw1" placeholder="Enter Your Password">
+            <input class="btn" type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="signup.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+
+
+
+</body>
+
+</html>
+

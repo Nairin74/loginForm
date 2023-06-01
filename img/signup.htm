@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .navbar{
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            
+        }
+    </style>
+</head>
+
+<body>
+     <nav class="navbar">
+        <div class="container">
+
+        <div class="logo">
+            logo
+        </div>
+        <a href="#" class="toggleBtn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navLinks">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Sign Up</a></li>
+        </ul>
+        </div>
+    </div>
+
+    </nav> 
+
+    
+     <div class="login">
+        <div class="container">
+        <form action="" class="form" onsubmit="sub1()">
+            <label for="">Sign-Up</label>
+            <input class="inputs" type="text" id="name" placeholder="Enter Your Name">
+            <input class="inputs" type="email" id="email" placeholder="Enter Your Email">
+            <input class="inputs" type="password" id="psw" placeholder="Enter Your Password">
+            <input class="btn" type="submit" value="Submit">
+        </form>
+        <form action="" class="form" onsubmit="sub2()">
+            <label for="">Login</label>
+            <input class="inputs" type="email" id="email1" placeholder="Enter Your Email">
+            <input class="inputs" type="password" id="psw1" placeholder="Enter Your Password">
+            <input class="btn" type="submit" value="Submit">
+        </form>
+    </div>
+    </div> 
+</body>
+
+</html>

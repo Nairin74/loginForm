@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form_style.css">
+</head>
+<body>
+    <div class="container">
+        
+        <input class="inputs" id="uName" type="text" placeholder="Enter Your Name">
+        <input class="inputs" id="uEmail" type="email" placeholder="Enter Your Email">     
+        <input class="inputs" id="uContact" type="numbers" placeholder="Enter Your Phone Number">
+    </div>
+    <input type="hidden" value="" id="indexdata">
+
+    <button type="button" class="btn mxmy" onclick="insertuser()">Add User</button> 
+    <button type="button" class="btn mxmy " onclick="updatebtn()">Update User</button>
+    
+    <table class="table mxmy">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th class="pName">Name</th>
+                <th class="pEmail">Email</th>
+                <th class="pContact">Contact</th>
+                <th class="pAction">Action</th>                
+            </tr>
+        </thead>
+        <tbody id="data">
+
+        </tbody>
+    </table>
+
+
+</body>
+</html>
+<script src="signup.js"></script>
+
+<script>
+    display()
+</script>

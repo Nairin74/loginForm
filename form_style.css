@@ -1,0 +1,234 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: hsl(120, 10%, 30%); */
+    background-image: url("img/login.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    color: black;
+    background-color: rgb(240 249 247 / 72%);
+    background-blend-mode: color;
+}
+:root{
+    --textColor : rgb(12 96 145);
+}
+td,th{
+    padding: 12px;
+    text-align: center;
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 16px 37px;
+    gap: 10px;
+}
+
+.mxmy{
+    margin: 2.73vh 5.78vh;
+}
+.btn1 {
+        /* position: relative;
+        width: 15.22vh;
+        height: 4.56vh;
+        left: 14.45vh; */
+        border-radius: 1.52vh;
+        border: 0.15vh solid rgb(122, 191, 231);
+        padding: 5px 8px;
+        /* border: none;
+        border-radius: 2px;   */
+        background-color: #b5d1e9;
+        cursor: pointer;
+        color: var(--textColor);}
+.btn1:hover{
+    background-color: #2b679c;
+    color: white;
+}
+td{
+    /* display: inline-block; */
+    /* padding: 0 1.52vh; */
+    color: var(--textColor);
+}
+th{
+    /* display: inline-block; */
+    /* padding: 0 1.06vh; */
+    color: var(--textColor);
+    text-decoration: underline;
+} 
+.table{
+    width: 90%;
+    border-collapse: collapse;
+}
+
+@media (max-width: 1050px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr{
+      display: block;
+    }
+    thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      tr{
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+      }
+
+      td{
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+        text-overflow: clip;
+      }
+      td:nth-of-type(1)::before{
+        content: "Id:";
+        position: absolute;
+        left:8px;
+      }
+      td:nth-of-type(2)::before{
+        content: "Name:";
+        position: absolute;
+        left:8px;
+      }
+      td:nth-of-type(3)::before{
+        content: "Email:";
+        position: absolute;
+        left:8px;
+      }
+      td:nth-of-type(4)::before{
+        content: "Contact:";
+        position: absolute;
+        left:8px;
+      }
+      td:nth-of-type(5)::before{
+        content: "Action:";
+        position: absolute;
+        left:8px;
+      }
+      .inputs{
+        width: 42vw;
+      }
+}
+
+.flexClass{
+display: flex;
+flex-direction: column;
+
+}
+
+.navbar{
+    background-color: rgb(122, 191, 231);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1.06vh 0.913vh #81c7bac7;
+}
+.logo{
+    font-size: 6.088vh;
+    margin-left: 2.283vh;
+}
+.navLinks ul{
+    display: flex;
+}
+.navLinks li{
+    list-style: none;
+   
+}
+.navLinks li:hover{
+    background-color: rgb(239, 243, 243);
+}
+.navLinks li a{
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem;
+    color: var(--textColor);
+}
+.toggleBtn{
+    position: absolute;
+    width: 3.8vh;
+    height: 1.52vh;
+    right: 7.61vh;
+    top: 2.89vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.toggleBtn .bar{
+
+    height: 0.45vh;
+    width: 100%;
+    border-radius: 1.52vh;
+    background-color: rgb(48, 93, 189);
+
+}
+@media (max-width:765px) {
+.toggleBtn{
+    display: flex;
+}
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navLinks ul{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* Login Section */
+
+
+.login{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15.22vh;
+    
+}
+.form{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+align-items: center;
+color: var(--textColor);
+}
+
+.inputs{
+    position: relative;
+    max-width: 40vw;
+    height: 7.61vh;
+    border: 0.3vh solid rgb(122, 191, 231);
+    border-radius: 1.82vh;
+    /* box-shadow: 0 1.52vh 1.52vh darkgrey; */
+    box-shadow: 0px 7px 6px #81c7bac7;
+    text-align: center;
+}
+.btn{
+    position: relative;
+    /* box-shadow: 0 0.76vh 1.52vh darkgrey; */
+    box-shadow: 0px 7px 6px #81c7bac7;
+    width: 25vh;
+    height: 7.61vh;
+    border-radius: 4.56vh;
+    border: 0.15vh solid rgb(122, 191, 231);
+    background-color:#b5d1e9;
+    cursor: pointer;
+    font-size: 3.5vh;
+    color: var(--textColor);
+}
+.btn:hover{
+    background-color: #2b679c;
+    color: white;}
